@@ -15,91 +15,66 @@ export default function WhatIDo() {
   ];
 
   return (
-    <section className="flex bg-[#F0F1F3] px-[300px] py-[150px] gap-[143px] w-[1920px] h-[876px]">
+    <section className="w-full bg-[#F0F1F3] px-6 lg:px-[300px] py-[100px] lg:py-[150px]">
       
-      {/* Left Side */}
-      <div className="flex flex-col gap-[50px] w-[529px] h-[338px] mt-[88px]">
+      <div className="flex flex-col lg:flex-row gap-[60px] lg:gap-[143px]">
 
-        <div className="flex flex-col gap-[24px] h-[276px]">
-          <h2
-  className="
-    text-[48px]
-    leading-[56px]
-    font-semibold
-    w-[254px]
-    h-[56px]
-    text-[#333333]
-    opacity-100
-  "
-  style={{ fontFamily: "Work Sans" }}
->
-  What I do?
-</h2>
+        {/* LEFT SIDE */}
+        <div className="flex flex-col gap-[40px] w-full lg:w-[529px] lg:mt-[88px]">
 
-<div className="flex flex-col gap-2">
-  <p
-    className="
-      text-[18px]
-      leading-[24px]
-      font-normal
-      w-[529px]
-      h-[96px]
-      text-[#132238]
-      opacity-100
-    "
-    style={{ fontFamily: "Work Sans" }}
-  >
- I design and develop scalable, high-performance web applications using modern technologies. My work focuses on building clean, responsive user interfaces combined with secure and efficient backend systems to deliver seamless digital experiences.
+          <div className="flex flex-col gap-[24px]">
+            <h2
+              className="text-[32px] lg:text-[48px] leading-tight lg:leading-[56px] font-semibold text-[#333333]"
+              style={{ fontFamily: "Work Sans" }}
+            >
+              What I do?
+            </h2>
 
-  </p>
+            <p
+              className="text-[16px] lg:text-[18px] leading-[24px] text-[#132238]"
+              style={{ fontFamily: "Work Sans" }}
+            >
+              I design and develop scalable, high-performance web applications using modern technologies. My work focuses on building clean, responsive user interfaces combined with secure and efficient backend systems to deliver seamless digital experiences.
+            </p>
 
-  <p
-    className="
-      text-[18px]
-      leading-[24px]
-      font-normal
-      w-[529px]
-      h-[48px]
-      text-[#132238]
-      opacity-100
-    "
-    style={{ fontFamily: "Work Sans" }}
-  >
-  I specialize in full-stack web development, integrating frontend frameworks with robust APIs and databases to create solutions that are both user-friendly and technically sound.
-  </p>
-</div>
-
-
-        </div>
-
-        <button className="w-[126px] h-[48px] bg-[#A53DFF] rounded text-white font-semibold text-[16px]">
-          Learn More
-        </button>
-      </div>
-
-      {/* Right Side Boxes */}
-      <div className="flex flex-col gap-[24px] w-[648px] h-[576px]">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="relative flex flex-col gap-[16px] 
-                       w-[648px] h-[176px] 
-                       p-[32px] bg-white 
-                       rounded-[6px] 
-                       shadow-[0_32px_96px_rgba(28,25,25,0.16)]"
-          >
-            {/* Left Color Bar */}
-            <div className="absolute left-0 top-0 w-[5px] h-full bg-[#A53DFF]" />
-
-            <h3 className="text-[24px] font-semibold text-[#132238] leading-[24px]">
-              {service.title}
-            </h3>
-
-            <p className="text-[16px] text-[#424E60] leading-[24px]">
-              {service.desc}
+            <p
+              className="text-[16px] lg:text-[18px] leading-[24px] text-[#132238]"
+              style={{ fontFamily: "Work Sans" }}
+            >
+              I specialize in full-stack web development, integrating frontend frameworks with robust APIs and databases to create solutions that are both user-friendly and technically sound.
             </p>
           </div>
-        ))}
+
+          <button className="w-[140px] h-[48px] bg-[#A53DFF] rounded text-white font-semibold text-[16px]">
+            Learn More
+          </button>
+        </div>
+
+        {/* RIGHT SIDE BOXES */}
+        <div className="flex flex-col gap-[24px] w-full lg:w-[648px]">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="relative flex flex-col gap-[16px]
+                         p-[24px] lg:p-[32px]
+                         bg-white
+                         rounded-[6px]
+                         shadow-[0_32px_96px_rgba(28,25,25,0.16)]"
+            >
+              {/* LEFT COLOR BAR */}
+              <div className="absolute left-0 top-0 w-[5px] h-full bg-[#A53DFF]" />
+
+              <h3 className="text-[20px] lg:text-[24px] font-semibold text-[#132238]">
+                {service.title}
+              </h3>
+
+              <p className="text-[15px] lg:text-[16px] leading-[24px] text-[#424E60]">
+                {service.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+
       </div>
     </section>
   );

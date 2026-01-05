@@ -4,181 +4,75 @@ import ellipse4 from "../icons/Ellipse 4.svg";
 
 export default function Hero() {
   return (
-    <section
-      className="relative flex flex-col md:flex-row items-center justify-between p-12 bg-white-100 mt-24 overflow-hidden"
-      data-aos="fade-up"
-    >
-      <div className="max-w-[1920px] mx-auto pl-[300px] pr-[300px] w-full flex items-center justify-between">
-      {/* Decorative blur backgrounds */}
-     {/* Decorative SVG backgrounds */}
-<img
+    <section className="relative bg-white overflow-hidden pt-24">
+      {/* Decorative SVGs */}
+      <img
+        src={ellipse4}
+        alt=""
+        className="absolute right-[-400px] top-[-200px] w-[900px] blur-[200px] pointer-events-none hidden md:block"
+      />
 
-  src={ellipse4}
-  alt="Ellipse 4"
-  style={{
-    position: "absolute",
-    width: "1044.3157787795094px",
-    height: "1044.3157787795094px",
-    top: "0px",
-    left: "1396px",
-    transform: "rotate(130.44deg)",
-    opacity: 1,
-    pointerEvents: "none",
-    zIndex: 0,
-      backdropFilter: "blur(600px)",
-    WebkitBackdropFilter: "blur(600px)",
-  
-  }}
-/>
+      <img
+        src={ellipse3}
+        alt=""
+        className="absolute right-[-300px] top-[-500px] w-[800px] blur-[250px] pointer-events-none hidden md:block"
+      />
 
-<img
-  src={ellipse3}
-  alt="Ellipse 3"
-  style={{
-    position: "absolute",
-    width: "900.2134256600555px",
-    height: "1040.2134256600555px",
-    top: "-603px",
-    left: "1288px",
-    transform: "rotate(50.44deg)",
-    opacity: 1,
-    pointerEvents: "none",
-    zIndex: 0,
-      backdropFilter: "blur(700px)",
-    WebkitBackdropFilter: "blur(700px)",
-  }}
-/>
+      {/* Container */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center gap-12">
+        
+        {/* LEFT CONTENT */}
+        <div className="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left">
+          <h1 className="text-[42px] md:text-[64px] lg:text-[82px] leading-tight font-semibold text-[#132238]">
+            Hello, I'm <br />
+            <span className="text-[#132238]">Asma Fatima</span>
+          </h1>
 
-      {/* Left side: Text + Stats */}
-      <div
-        style={{
-          width: "648px",
-          height: "446px",
-          gap: "15px",
-          display: "flex",
-          flexDirection: "column",
-          opacity: 1,
-          transform: "translateX(-37px)",
-        }}
-      >
-        <h1
-          style={{
-            width: "579px",
-            height: "180px",
-            opacity: 1,
-            fontFamily: "Work Sans",
-            fontWeight: 600,
-            fontSize: "82px",
-            lineHeight: "84px",
-            letterSpacing: "0%",
-            color: "#132238",
-            margin: 0,
-          }}
-        >
-          Hello, I'm    
-         
-          Asma Fatima 
-        </h1>
-        <p
-          style={{
-            width: "648px",
-            height: "62px",
-            opacity: 1,
-            fontFamily: "Work Sans",
-            fontWeight: 400,
-            fontSize: "18px",
-            lineHeight: "24px",
-            letterSpacing: "0%",
-            margin: 0,
-            color: "#132238",
-          }}
-        >
-         I’m a Freelance UI/UX Designer and Full-Stack Web Developer with over 2 years of experience in creating responsive interfaces and scalable web applications using modern technologies.
-        </p>
+          <p className="text-[16px] md:text-[18px] text-[#132238] max-w-xl mx-auto md:mx-0">
+            I’m a Freelance UI/UX Designer and Full-Stack Web Developer with over
+            2 years of experience in creating responsive interfaces and scalable
+            web applications using modern technologies.
+          </p>
 
-        {/* Button */}
-        <button
-          style={{
-            width: "126px",
-            height: "70px",
-            padding: "12px 24px",
-            gap: "12px",
-            borderRadius: "4px",
-            background: "#A53DFF",
-            opacity: 1,
-            border: "none",
-            cursor: "pointer",
-            color: "white",
-            fontSize: "16px",
-            fontWeight: "600",
-          }}
-        >
-          Say Hello!
-        </button>
+          <button className="bg-[#A53DFF] text-white px-6 py-4 rounded-md font-semibold w-fit mx-auto md:mx-0">
+            Say Hello!
+          </button>
 
-        {/* Frame1 (stats row) - moved under text */}
-        <div
-          style={{
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "flex-start",
-            alignItems: "center",
-            padding: 0,
-            gap: "12px",
-            width: "648px",
-            height: "106px",
-            marginTop: "24px",
-            background: "#EDD8FF80",
-            border: "1px solid #FFFFFF",
-            borderRadius: "6px",
-            zIndex: 20,
-          }}
-        >
-          {/* Frame 17 */}
-          <div style={{display: "flex", flexDirection: "column", alignItems: "center", padding: 0, gap: "8px", width: "200px", height: "72px"}}>
-            <div style={{width: "200px", height: "40px", fontFamily: "Work Sans", fontWeight: 600, fontSize: "32px", lineHeight: "40px", textAlign: "center", color: "#424E60"}}>2 Y.</div>
-            <div style={{width: "200px", height: "24px", fontFamily: "Work Sans", fontWeight: 400, fontSize: "16px", lineHeight: "24px", textAlign: "center", color: "#697484"}}>Experience</div>
-          </div>
-
-          {/* Separator (after 15 Y. Experience) */}
-          <div style={{width: "0px", height: "72px", borderLeft: "3px solid #FFFFFF"}} />
-
-          {/* Frame 18 */}
-          <div style={{display: "flex", flexDirection: "column", alignItems: "center", padding: 0, gap: "8px", width: "200px", height: "72px"}}>
-            <div style={{width: "200px", height: "40px", fontFamily: "Work Sans", fontWeight: 600, fontSize: "32px", lineHeight: "40px", textAlign: "center", color: "#424E60"}}>50+</div>
-            <div style={{width: "200px", height: "24px", fontFamily: "Work Sans", fontWeight: 400, fontSize: "16px", lineHeight: "24px", textAlign: "center", color: "#697484"}}>Projects Completed</div>
-          </div>
-
-          {/* Separator (after Projects Completed) */}
-          <div style={{width: "0px", height: "72px", borderLeft: "3px solid #FFFFFF"}} />
-
-          {/* Frame 19 */}
-          <div style={{display: "flex", flexDirection: "column", alignItems: "center", padding: 0, gap: "8px", width: "200px", height: "72px"}}>
-            <div style={{width: "200px", height: "40px", fontFamily: "Work Sans", fontWeight: 600, fontSize: "32px", lineHeight: "40px", textAlign: "center", color: "#424E60"}}>48+</div>
-            <div style={{width: "200px", height: "24px", fontFamily: "Work Sans", fontWeight: 400, fontSize: "16px", lineHeight: "24px", textAlign: "center", color: "#697484"}}>Happy Clients</div>
+          {/* STATS */}
+          <div className="flex flex-col sm:flex-row justify-between gap-4 mt-6 w-full h-300 bg-[#EDD8FF80] border border-white rounded-lg p-4">
+            <Stat title="2 Y." label="Experience" />
+            <Divider />
+            <Stat title="50+" label="Projects Completed" />
+            <Divider />
+            <Stat title="48+" label="Happy Clients" />
           </div>
         </div>
-      </div>
 
-      {/* Right side: Image placeholder */}
-      <div className="md:w-1/2 mt-10 md:mt-0 md:ml-0 flex justify-end relative">
-        <img
-          src={profile3} alt="Rectangle" 
-
-          alt="Hero"
-          style={{
-            width: "536px",
-            height: "536px",
-            opacity: 1,
-            borderRadius: "25px",
-            background: "#FFFFFF",
-            boxShadow: "0px 24px 116px 0px #2B384C17",
-            transform: "translateX(40px)",
-          }}
-        />
-      </div>
+        {/* RIGHT IMAGE */}
+        <div className="w-full h-[400px] md:w-1/2 flex justify-center md:justify-end">
+          <img
+            src={profile3}
+            alt="Hero"
+            className="w-[280px] sm:w-[360px] md:w-[850px] lg:w-[536px] rounded-2xl shadow-2xl"
+          />
+        </div>
       </div>
     </section>
   );
+}
+
+/* Small Components */
+function Stat({ title, label }) {
+  return (
+    <div className="text-center">
+      <h3 className="text-[28px] md:text-[32px] font-semibold text-[#424E60]">
+        {title}
+      </h3>
+      <p className="text-[#697484] text-sm md:text-base">{label}</p>
+    </div>
+  );
+}
+
+function Divider() {
+  return <div className="hidden sm:block w-px bg-white" />;
 }
